@@ -21,6 +21,7 @@ db.collection("UNCExt").doc("DWS").onSnapshot((doc) => {
 
 download.addEventListener("click", () =>{
     var newdownload = downloads + 1;
+    window.open("http://data.jgomezc145.xyz/files/extensions/UCNExtension.crx")
     db.collection("UNCExt").doc("DWS").set({
         count: newdownload
     })
